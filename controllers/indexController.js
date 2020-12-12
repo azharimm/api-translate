@@ -1,6 +1,17 @@
 const translate = require("google-baidu-translate-api");
 
-exports.index = async (req, res) => {
+exports.index = (req, res) => {
+	return res.json({
+		status: true,
+		data: {
+			maintainer: 'Azhari Muhammad M <azhari.marzan@gmail.com>',
+			source: 'https://github.com/azharimm/api-translate',
+			endpoint: 'https://api-translate.azharimm.tk/translate?engine={engine}&text={text}&to={to}',
+			example: 'https://api-translate.azharimm.tk/translate?engine=google&text=Welcome&to=id'
+		}
+	})
+}
+exports.trans = async (req, res) => {
 	try {
 		const engine = req.query.engine;
 		const text = req.query.text;
