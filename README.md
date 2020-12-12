@@ -4,7 +4,7 @@
 
 # Usage
 ```
-https://api-translate.azharimm.tk/?engine={engine}&text={text}&to={to}
+https://api-translate.azharimm.tk/translate?engine={engine}&text={text}&to={to}
 ```
 ### Query params
 | params        | desc | required |
