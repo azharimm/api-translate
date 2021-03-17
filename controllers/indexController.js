@@ -36,11 +36,12 @@ exports.trans = async (req, res) => {
             to = "en";
         }
 
-		if (engine == "google") {
-			result = await translate(`${text}`, { to });
-		} else {
-			result = await translate.baidu(`${text}`, to);
-		}
+		result = await translate(`${text}`, { to });
+		// if (engine == "google") {
+		// 	result = await translate(`${text}`, { to });
+		// } else {
+		// 	result = await translate.baidu(`${text}`, to);
+		// }
 		res.status(200).json({
 			status: true,
 			message: "success",
