@@ -1,5 +1,4 @@
 const translate = require("google-baidu-translate-api");
-// const translate = require('google-translate-api');
 
 exports.index = (req, res) => {
 	return res.json({
