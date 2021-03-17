@@ -1,4 +1,5 @@
 const translate = require("google-baidu-translate-api");
+// const translate = require('google-translate-api');
 
 exports.index = (req, res) => {
 	return res.json({
@@ -36,9 +37,9 @@ exports.trans = async (req, res) => {
         }
 
 		if (engine == "google") {
-			result = await translate.google(text, to);
+			result = await translate(`${text}`, to);
 		} else {
-			result = await translate.baidu(text, to);
+			result = await translate.baidu(`${text}`, to);
 		}
 		res.status(200).json({
 			status: true,
