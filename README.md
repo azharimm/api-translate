@@ -1,7 +1,5 @@
 # Google & Baidu Translate API Wrapper
 
-### This API uses [eyasliu/google-baidu-translate-api](https://github.com/eyasliu/google-baidu-translate-api) package
-
 # Usage
 ```
 https://api-translate.azharimm.tk/translate?engine={engine}&text={text}&to={to}
