@@ -1,5 +1,6 @@
-const translate = require("google-baidu-translate-api");
-
+// const translate = require("google-baidu-translate-api");
+const translate = require('@iamtraction/google-translate');
+ 
 exports.index = (req, res) => {
 	return res.json({
 		status: true,
@@ -36,7 +37,7 @@ exports.trans = async (req, res) => {
         }
 
 		if (engine == "google") {
-			result = await translate(`${text}`, to);
+			result = await translate(`${text}`, { to });
 		} else {
 			result = await translate.baidu(`${text}`, to);
 		}
@@ -44,9 +45,9 @@ exports.trans = async (req, res) => {
 			status: true,
 			message: "success",
 			data: {
-				origin: result.src,
-				result: result.dist,
-				targets: result.targets,
+				origin: result.iso,
+				result: result.text,
+				targets: [],
 			},
 		});
 	} catch (error) {
