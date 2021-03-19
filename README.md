@@ -2,7 +2,7 @@
 
 # Usage
 ```
-https://api-translate.azharimm.tk/translate?engine={engine}&text={text}&to={to}
+https://amm-api-translate.herokuapp.com/translate?engine={engine}&text={text}&to={to}
 ```
 ### Query params
 | params        | desc | required |

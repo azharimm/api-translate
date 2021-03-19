@@ -7,8 +7,8 @@ exports.index = (req, res) => {
 		data: {
 			maintainer: 'Azhari Muhammad M <azhari.marzan@gmail.com>',
 			source: 'https://github.com/azharimm/api-translate',
-			endpoint: 'https://amm-api-translate.herokuapp.com//translate?engine={engine}&text={text}&to={to}',
-			example: 'https://amm-api-translate.herokuapp.com//translate?engine=google&text=Welcome&to=id'
+			endpoint: 'https://amm-api-translate.herokuapp.com/translate?engine={engine}&text={text}&to={to}',
+			example: 'https://amm-api-translate.herokuapp.com/translate?engine=google&text=Welcome&to=id'
 		}
 	})
 }
